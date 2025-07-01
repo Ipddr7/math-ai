@@ -19,7 +19,21 @@ st.set_page_config(
 st.markdown("""
 <style>
     body, .stApp {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        background: linear-gradient(135deg, #a8d0ff 0%, #d6bbff 100%) !important;
+        color: #212121 !important;           /* Primary text (dark charcoal) */
+        font-family: sans-serif !important;
+    }
+    
+    h1, h2, h3 {
+        color: #1a237e !important;           /* Headings (deep navy) */
+    }
+    
+    p, label, .form-control {
+        color: #212121 !important;           /* Body & form text */
+    }
+    
+    a, .btn-primary {
+        color: #ffffff !important; /* Links & buttons stay white */
     }
     .header-container {
         background: #fff;
@@ -207,7 +221,7 @@ if solve_button and user_input and len(user_input.strip()) > 4:
                 # Display solution steps if available
                 if solution.get('steps'):
                     ##st.markdown('<div class="section-card">', unsafe_allow_html=True)
-                    st.markdown('<div class="section-header">📝 Step-by-Step Solution</div>', unsafe_allow_html=True)
+                   ## st.markdown('<div class="section-header">📝 Step-by-Step Solution</div>', unsafe_allow_html=True)
                     components['visualizer'].display_solution_steps(solution)
                     st.markdown('</div>', unsafe_allow_html=True)
 
