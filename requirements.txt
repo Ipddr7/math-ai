@@ -1,0 +1,10 @@
+sympy
+nltk
+spacy
+transformers
+torch
+numpy
+matplotlib
+streamlit
+pandas
+scikit-learn 
